@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        #logoContainer {
+            text-align: center;
+        }
+        #logo {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+                <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+
+                        <div id="logoContainer">
+                            <img id="logo" src="logo.png" alt="Logo"> <br>
+                            <h6 style="margin-top: 10px;">MAHAWELI AUTHORITY</h6>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div id="alertPlaceholder"></div> <!-- Alert Placeholder -->
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="systemSelect">Select System:</label>
+                                <select class="form-control" id="systemSelect">
+                                    <option value="SYSTEM C">SYSTEM C</option>
+                                    <option value="SYSTEM E">SYSTEM E</option>
+                                    <option value="SYSTEM H">SYSTEM H</option>
+                                    <option value="SYSTEM MORA">SYSTEM MORA</option>
+                                    <option value="SYSTEM RABAKANOYA">SYSTEM RABAKANOYA</option>
+                                    <option value="SYSTEM WALAWE">SYSTEM WALAWE</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="userId">User ID:</label>
+                                <input type="text" class="form-control" id="userId" name="userId">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                            <br> <br>
+                            <p style="text-align: center;">Design & Devolopmet By IT Department - MASL <br>
+                            Distribute By PMU - MASL
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
